@@ -1,24 +1,26 @@
 //your parameter variables go here!
-let LB1X = 300 //sets the X value for LB1
-let LB1Y = 10  //sets the Y value for LB1
-let LB2X = 140 //sets the X value for LB2
-let LB2Y = 50  //sets the Y value for LB2
-let LB3X = 130 //sets the X value for LB3
-let LB3Y = 50  //sets the Y value for LB3
+//LB = lightning bolt 
+let LB1X = -40 //sets the X value for LB1
+let LB1Y = 30  //sets the Y value for LB1
+let LB2X = 40 //sets the X value for LB2
+let LB2Y = 180  //sets the Y value for LB2
+let LB3X = -90 //sets the X value for LB3
+let LB3Y = -70  //sets the Y value for LB3
 
-let LB1S = 1.5 //sets the scale for LB1
+let LB1S = 2   //sets the scale for LB1
 let LB2S = 1   //sets the scale for LB2
-let LB3S = 1.2 // sets the scale for LB3
+let LB3S = 1  // sets the scale for LB3
 
-let StrokeMode = false; 
+let StrokeMode = false; //if StrokeMode is true then no Stroke
 
-let LB1C = [152, 58, 171] //sets the colour for LB1
-let LB2C = [39, 194, 49]  //sets the colour for LB2
-let LB3C = [204, 41, 54]  //sets the colour for LB3
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
@@ -28,21 +30,22 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-background(76, 109, 166)
+background(201, 15, 12)
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
-strokeWeight(3.5)
-if(StrokeMode){
+strokeWeight(4.5)
+if(StrokeMode){ 
 noStroke()
 }
 
-DrawLB1(LB1X,LB1Y,LB1C)
+DrawLB1(LB1X,LB1Y,LB1C) //draws lightning bolt 1
 
-DrawLB2(LB2X,LB2Y,LB2C)
+DrawLB2(LB2X,LB2Y,LB2C) //draws lightning bolt 2
 
-DrawLB3(LB3X,LB3Y,LB3C)
+DrawLB3(LB3X,LB3Y,LB3C) //draws lihgtning bolt 3
+
 
 }
   
@@ -78,7 +81,6 @@ function DrawLB2(LB2X,LB2Y,LB2C = [252, 232, 45]){
   endShape(CLOSE);
   pop();
 }
-
 function DrawLB3(LB3X,LB3Y,LB3C = [252, 232, 45]){
   push();
   translate(LB3X,LB3Y)
