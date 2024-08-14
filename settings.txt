@@ -10,45 +10,336 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+//LB = lightning bolt 
+let LB1X = 0 //sets the X value for LB1
+let LB1Y = 50  //sets the Y value for LB1
+let LB2X = 30 //sets the X value for LB2
+let LB2Y = -10  //sets the Y value for LB2
+let LB3X = 140 //sets the X value for LB3
+let LB3Y = 90  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 2   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [40, 34, 227] //sets the colour for LB1
+let LB2C = [140, 53, 232]  //sets the colour for LB2
+let LB3C = [84, 201, 44]  //sets the colour for LB3
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
-/////////////////////////////////
+function wallpaper_background() {
+background(240, 84, 222)
+}
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+//LB = lightning bolt 
+let LB1X = 0 //sets the X value for LB1
+let LB1Y = 50  //sets the Y value for LB1
+let LB2X = 30 //sets the X value for LB2
+let LB2Y = -10  //sets the Y value for LB2
+let LB3X = 140 //sets the X value for LB3
+let LB3Y = 90  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 2   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
+
+function wallpaper_background() {
+background(209, 48, 33)
+}
+
+Wallpaper 3:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = 0 //sets the X value for LB1
+let LB1Y = 50  //sets the Y value for LB1
+let LB2X = 30 //sets the X value for LB2
+let LB2Y = -10  //sets the Y value for LB2
+let LB3X = 140 //sets the X value for LB3
+let LB3Y = 90  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 2   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = true; //if StrokeMode is true then no Stroke
+
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(209, 48, 33)
+}
+
+Wallpaper 4:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = 0 //sets the X value for LB1
+let LB1Y = 80  //sets the Y value for LB1
+let LB2X = -10 //sets the X value for LB2
+let LB2Y = 80  //sets the Y value for LB2
+let LB3X = -90 //sets the X value for LB3
+let LB3Y = 0  //sets the Y value for LB3
+
+let LB1S = 1   //sets the scale for LB1
+let LB2S = 1   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(13, 13, 12)
+}
+
+Wallpaper 5:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = -40 //sets the X value for LB1
+let LB1Y = 30  //sets the Y value for LB1
+let LB2X = 40 //sets the X value for LB2
+let LB2Y = 180  //sets the Y value for LB2
+let LB3X = -90 //sets the X value for LB3
+let LB3Y = -70  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 1   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = true; //if StrokeMode is true then no Stroke
+
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(13, 13, 12)
+}
+
+Wallpaper 6:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = -40 //sets the X value for LB1
+let LB1Y = 30  //sets the Y value for LB1
+let LB2X = 40 //sets the X value for LB2
+let LB2Y = 180  //sets the Y value for LB2
+let LB3X = -90 //sets the X value for LB3
+let LB3Y = -70  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 1   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [245, 225, 49] //sets the colour for LB1
+let LB2C = [245, 225, 49]  //sets the colour for LB2
+let LB3C = [245, 225, 49]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(201, 15, 12)
+}
+
+Wallpaper 7:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = -40 //sets the X value for LB1
+let LB1Y = 30  //sets the Y value for LB1
+let LB2X = 40 //sets the X value for LB2
+let LB2Y = 180  //sets the Y value for LB2
+let LB3X = -90 //sets the X value for LB3
+let LB3Y = -70  //sets the Y value for LB3
+
+let LB1S = 2   //sets the scale for LB1
+let LB2S = 1   //sets the scale for LB2
+let LB3S = 1  // sets the scale for LB3
+
+let StrokeMode = true; //if StrokeMode is true then no Stroke
+
+let LB1C = [47, 250, 236] //sets the colour for LB1
+let LB2C = [255, 13, 239]  //sets the colour for LB2
+let LB3C = [252, 121, 5]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(23, 13, 191)
+}
+
+Wallpaper 8:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = 40 //sets the X value for LB1
+let LB1Y = 50  //sets the Y value for LB1
+let LB2X = 85 //sets the X value for LB2
+let LB2Y = 120  //sets the Y value for LB2
+let LB3X = -60 //sets the X value for LB3
+let LB3Y = -100  //sets the Y value for LB3
+
+let LB1S = 1.5   //sets the scale for LB1
+let LB2S = 1.5   //sets the scale for LB2
+let LB3S = 1.5  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [252, 225, 15] //sets the colour for LB1
+let LB2C = [252, 225, 15]  //sets the colour for LB2
+let LB3C = [252, 225, 15]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(23, 13, 191)
+}
+
+Wallpaper 9:
+
+//your parameter variables go here!
+//LB = lightning bolt 
+let LB1X = -5 //sets the X value for LB1
+let LB1Y = 80  //sets the Y value for LB1
+let LB2X = 115 //sets the X value for LB2
+let LB2Y = 70  //sets the Y value for LB2
+let LB3X = -60 //sets the X value for LB3
+let LB3Y = -100  //sets the Y value for LB3
+
+let LB1S = 1.5   //sets the scale for LB1
+let LB2S = 1.5   //sets the scale for LB2
+let LB3S = 1.5  // sets the scale for LB3
+
+let StrokeMode = false; //if StrokeMode is true then no Stroke
+
+let LB1C = [252, 225, 15] //sets the colour for LB1
+let LB2C = [252, 225, 15]  //sets the colour for LB2
+let LB3C = [252, 225, 15]  //sets the colour for LB3
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(true); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 300;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+background(214, 36, 13)
+}
+
+
+
+
